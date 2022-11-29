@@ -1,5 +1,7 @@
 :root{
     --button: rgb(108, 153, 19);
+    --logoclaro:  #928e34;
+    --logooscuro: #103931;
 }
 *{
     box-sizing: border-box;
@@ -37,7 +39,7 @@ button:hover{
 }
 
 header{
-    background-color: rgb(14, 70, 22);
+    background-color: var(--logoclaro)   ;
     
 }
 
@@ -55,7 +57,7 @@ header .container{
     align-items: center;
 }
 
-header  a{
+header  nav{
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -63,4 +65,16 @@ header  a{
     text-decoration: none;
     font-size: 2.5rem;
     color: white;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: white;
+    background-color: #928e34;
 }
